@@ -2,22 +2,53 @@
 	border: 2px solid blue;
 	background-color: #f4f4;
 	text-align: center;
-	width: 250px;
-	margin: 5px;
+	width: 300px;
+	margin: 20px;
 }
 a{
 	color: green;
 }
 img{
-	width: 250px;
-	height: 250px;
+	width: 300px;
+	height: 300px;
 }
 /*body{
 	background-image: url(https://i.ytimg.com/vi/YTFadzLvTwA/maxresdefault.jpg);
-	background-repeat: no-repeat;
+	background-repeat: no-repear 
 	background-size: 1280px 950px;
 }*/
 .flex-parent{
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
 }
+
+/*meadia quaries
+for mobiles 320px-425px
+for tablet 426-768px
+for laptop 769-1440px or above
+*/
+
+@media screen and (min-width:425px){
+    .card{
+	border: 2px solid blue;
+	background-color: yellow;
+	text-align: center;
+	width: 300px;
+	margin: 20px;
+}
+a{
+	color: blue;
+}
+}
+@media screen and (min-width:426px) and (max-width:768){
+    .card{
+	border: 2px solid blue;
+	background-color: orange;
+	text-align: center;
+	width: 300px;
+	margin: 20px;
+}
+
+
